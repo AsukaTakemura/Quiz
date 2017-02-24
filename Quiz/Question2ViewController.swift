@@ -27,16 +27,11 @@ class Question2ViewController: UIViewController {
     @IBAction func confirm(){
         if textField.text ==  "整数"{
             label.text = "正解です"
-            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(getter: Question2ViewController.next), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Question2ViewController.next), userInfo: nil, repeats: false)
         }else{
             label.text = "不正解です"
-            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(getter: Question2ViewController.next), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Question2ViewController.next), userInfo: nil, repeats: false)
         }
-        
-        func next(){
-            performSegue(withIdentifier: "toQuestion3", sender: nil)
-        }
-
         
         /*
          // MARK: - Navigation
@@ -49,4 +44,9 @@ class Question2ViewController: UIViewController {
          */
         
     }
+    
+    func next(){
+        performSegue(withIdentifier: "toQuestion3", sender: nil)
+    }
 }
+
