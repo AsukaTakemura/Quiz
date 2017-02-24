@@ -29,16 +29,16 @@ class Question1ViewController: UIViewController {
     @IBAction func confirm(){
         if textField.text ==  "文字列"{
             label.text = "正解です"
-            timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
-            performSegue(withIdentifier: "toQuestion2", sender: nil)
+            timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(getter: Question1ViewController.next), userInfo: nil, repeats: false)
         }else{
             label.text = "不正解です"
-            timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
-            performSegue(withIdentifier: "toQuestion2", sender: nil)
+            timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(getter: Question1ViewController.next), userInfo: nil, repeats: false)
         }
         
-
-
+        
+        func next(){
+            performSegue(withIdentifier: "toQuestion2", sender: nil)
+        }
         
         /*
          // MARK: - Navigation
@@ -51,5 +51,5 @@ class Question1ViewController: UIViewController {
          */
         
     }
-
+    
 }

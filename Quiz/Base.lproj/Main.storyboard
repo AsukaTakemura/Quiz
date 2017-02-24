@@ -53,6 +53,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="label" destination="np3-hZ-VzJ" id="Za2-hk-jjP"/>
                         <outlet property="startButton" destination="5G7-2U-cIs" id="A4J-oQ-1Dh"/>
                     </connections>
                 </viewController>

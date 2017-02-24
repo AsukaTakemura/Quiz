@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var startButton: UIButton!
-    
+    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         
         self.startButton.layer.borderColor = UIColor.orange.cgColor
         self.startButton.layer.borderWidth = 2
+        
+        self.label.layer.cornerRadius = 15
+        
+        self.label.layer.borderColor = UIColor.yellow.cgColor
+        self.label.layer.borderWidth = 2
         
         // Do any additional setup after loading the view, typically from a nib.
     }
