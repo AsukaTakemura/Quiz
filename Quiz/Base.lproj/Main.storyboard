@@ -25,7 +25,7 @@
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Dvl-Yo-qhu" kind="show" id="Mry-tu-psf"/>
+                                    <segue destination="Dvl-Yo-qhu" kind="show" id="MZZ-VS-lCU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swift 単語" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np3-hZ-VzJ">
@@ -107,11 +107,18 @@
                                 <state key="normal" title="確定"/>
                                 <connections>
                                     <action selector="confirm" destination="Dvl-Yo-qhu" eventType="touchUpInside" id="7he-Gr-Tsv"/>
-                                    <segue destination="8yh-LB-oQb" kind="push" id="fAJ-Pr-i65"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-w4-iMc">
+                                <frame key="frameInset" minX="16" minY="594" width="61" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ヒント"/>
+                                <connections>
+                                    <segue destination="fiy-2b-9Wt" kind="show" id="lbN-eb-4p1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99522130949999998" green="0.76908218009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="l04-Lc-042"/>
@@ -130,11 +137,129 @@
                     <connections>
                         <outlet property="label" destination="Gj3-f9-uSG" id="XeP-mz-tZ5"/>
                         <outlet property="textField" destination="l04-Lc-042" id="OO6-vc-bc6"/>
+                        <segue destination="8yh-LB-oQb" kind="show" identifier="toQuestion2" id="2uV-1m-Jot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgb-gY-D6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1159.2" y="348.57571214392806"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ue4-JP-4FV">
+            <objects>
+                <viewController id="fiy-2b-9Wt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="paa-6s-Fsx"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ym-KL-UQj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Guf-sw-N6w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bpF-Vs-qcC">
+                                <frame key="frameInset" minX="28" minY="140" width="317" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上のようなものの総称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsP-WD-zt7">
+                                <frame key="frameInset" minX="68" minY="494" width="247" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34P-Fv-ZPk">
+                                <frame key="frameInset" minX="28" minY="28" width="51" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="Dvl-Yo-qhu" kind="show" id="Sai-mG-PEZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ts3-aU-OKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5999999999999" y="1108.6956521739132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eiA-9f-MxH">
+            <objects>
+                <viewController id="tdh-oD-2h1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sUf-YA-wrR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lok-P3-sQA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vyo-I3-Ie8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seisuu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-zm-c2c">
+                                <frame key="frameInset" minX="16" minY="111" width="343" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上のようなものの総称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fip-Go-utq">
+                                <frame key="frameInset" minX="64" minY="502" width="247" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoV-5O-fv3">
+                                <frame key="frameInset" minX="16" minY="24" width="60" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="8yh-LB-oQb" kind="show" id="orW-ZE-iiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTp-Dj-q7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.5999999999999" y="1117.6911544227887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CnL-lS-jSR">
+            <objects>
+                <viewController id="fQ5-dc-65p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OMl-Nc-Q4P"/>
+                        <viewControllerLayoutGuide type="bottom" id="HYN-eI-uSW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M8z-L0-wtg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="syousuu.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnC-3m-HFe">
+                                <frame key="frameInset" minX="33" minY="129" width="308" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上のようなものの総称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unK-Gd-sVy">
+                                <frame key="frameInset" minX="64" minY="489" width="247" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-gn-pjg">
+                                <frame key="frameInset" minX="29" minY="28" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="SwV-YS-Zri" kind="show" id="ipH-xJ-ZRO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dho-07-o9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="1117.6911544227887"/>
         </scene>
         <!--Question2 View Controller-->
         <scene sceneID="Tks-BJ-47c">
@@ -170,7 +295,6 @@
                                 <state key="normal" title="確定"/>
                                 <connections>
                                     <action selector="confirm" destination="8yh-LB-oQb" eventType="touchUpInside" id="EAo-ID-5kj"/>
-                                    <segue destination="SwV-YS-Zri" kind="show" id="ef0-Wy-5gj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LWx-CM-nAK">
@@ -186,13 +310,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-j5-SLi">
+                                <frame key="frameInset" minX="22" minY="594" width="61" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ヒント"/>
+                                <connections>
+                                    <segue destination="tdh-oD-2h1" kind="show" id="Lar-yW-h98"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99522130949999998" green="0.76908218009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="UxI-Ka-afl"/>
                     <connections>
                         <outlet property="label" destination="G5w-zV-7Fm" id="FLM-jP-toW"/>
                         <outlet property="textField" destination="LWx-CM-nAK" id="Z5o-8x-Feu"/>
+                        <segue destination="SwV-YS-Zri" kind="show" identifier="toQuestion3" id="yVI-pl-Sfd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veq-Ax-iM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,7 +353,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIK-iV-KqG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Float" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIK-iV-KqG">
                                 <frame key="frameInset" minX="130" minY="181" width="109" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -233,7 +366,6 @@
                                 <state key="normal" title="確定"/>
                                 <connections>
                                     <action selector="confirm" destination="SwV-YS-Zri" eventType="touchUpInside" id="wbF-cl-bsR"/>
-                                    <segue destination="WZQ-23-p11" kind="show" id="rYF-bU-boK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itq-TK-6oq">
@@ -249,12 +381,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGV-Lx-1b2">
+                                <frame key="frameInset" minX="34" minY="594" width="61" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ヒント"/>
+                                <connections>
+                                    <segue destination="fQ5-dc-65p" kind="show" id="LhU-Zb-rap"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99522130949999998" green="0.76908218009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="zhf-ff-yKf" id="Ddo-UD-yIB"/>
                         <outlet property="textField" destination="itq-TK-6oq" id="jhI-Kp-I3n"/>
+                        <segue destination="WZQ-23-p11" kind="show" identifier="toEnd" id="NQZ-Cx-1xg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpq-oL-04d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -278,7 +419,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="タイトルに戻る"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="TQr-uR-NVO"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Kas-wf-E6A"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XV-jX-rje">
@@ -289,7 +430,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99522130949999998" green="0.76908218009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9tP-xW-2Bi"/>
@@ -307,4 +448,14 @@
             <point key="canvasLocation" x="3540" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imgres.jpg" width="307" height="164"/>
+        <image name="seisuu.png" width="417" height="25"/>
+        <image name="syousuu.png" width="260" height="169"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yVI-pl-Sfd"/>
+        <segue reference="2uV-1m-Jot"/>
+        <segue reference="MZZ-VS-lCU"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -33,6 +33,8 @@ class Question2ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Question2ViewController.confirm), userInfo: nil, repeats: false)
         }
         
+        
+        
         /*
          // MARK: - Navigation
          

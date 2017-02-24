@@ -12,6 +12,10 @@
 		1723BFD61E601ABA000AC2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1723BFD41E601ABA000AC2F3 /* Main.storyboard */; };
 		1723BFD81E603552000AC2F3 /* Question2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723BFD71E603552000AC2F3 /* Question2ViewController.swift */; };
 		1723BFDA1E6035F3000AC2F3 /* Question3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723BFD91E6035F3000AC2F3 /* Question3ViewController.swift */; };
+		1723BFDE1E6061B7000AC2F3 /* seisuu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1723BFDB1E6061B7000AC2F3 /* seisuu.png */; };
+		1723BFDF1E6061B7000AC2F3 /* syousuu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1723BFDC1E6061B7000AC2F3 /* syousuu.png */; };
+		1723BFE01E6061B7000AC2F3 /* imgres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1723BFDD1E6061B7000AC2F3 /* imgres.jpg */; };
+		1723BFE21E606E6A000AC2F3 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723BFE11E606E6A000AC2F3 /* SegueViewController.swift */; };
 		AC9978DB1E53DE6B00310725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9978DA1E53DE6B00310725 /* AppDelegate.swift */; };
 		AC9978DD1E53DE6B00310725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9978DC1E53DE6B00310725 /* ViewController.swift */; };
 		AC9978E21E53DE6B00310725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9978E11E53DE6B00310725 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		1723BFD51E601ABA000AC2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1723BFD71E603552000AC2F3 /* Question2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question2ViewController.swift; sourceTree = "<group>"; };
 		1723BFD91E6035F3000AC2F3 /* Question3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question3ViewController.swift; sourceTree = "<group>"; };
+		1723BFDB1E6061B7000AC2F3 /* seisuu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seisuu.png; sourceTree = "<group>"; };
+		1723BFDC1E6061B7000AC2F3 /* syousuu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syousuu.png; sourceTree = "<group>"; };
+		1723BFDD1E6061B7000AC2F3 /* imgres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgres.jpg; sourceTree = "<group>"; };
+		1723BFE11E606E6A000AC2F3 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		AC9978D71E53DE6B00310725 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9978DA1E53DE6B00310725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9978DC1E53DE6B00310725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 				1723BFD21E5CFB3B000AC2F3 /* EndViewController.swift */,
 				1723BFD71E603552000AC2F3 /* Question2ViewController.swift */,
 				1723BFD91E6035F3000AC2F3 /* Question3ViewController.swift */,
+				1723BFE11E606E6A000AC2F3 /* SegueViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -141,6 +150,9 @@
 		AC99790A1E53E62D00310725 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				1723BFDB1E6061B7000AC2F3 /* seisuu.png */,
+				1723BFDC1E6061B7000AC2F3 /* syousuu.png */,
+				1723BFDD1E6061B7000AC2F3 /* imgres.jpg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -254,7 +266,10 @@
 			files = (
 				1723BFD61E601ABA000AC2F3 /* Main.storyboard in Resources */,
 				AC9978E51E53DE6B00310725 /* LaunchScreen.storyboard in Resources */,
+				1723BFE01E6061B7000AC2F3 /* imgres.jpg in Resources */,
 				AC9978E21E53DE6B00310725 /* Assets.xcassets in Resources */,
+				1723BFDE1E6061B7000AC2F3 /* seisuu.png in Resources */,
+				1723BFDF1E6061B7000AC2F3 /* syousuu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1723BFE21E606E6A000AC2F3 /* SegueViewController.swift in Sources */,
 				1723BFD31E5CFB3C000AC2F3 /* EndViewController.swift in Sources */,
 				1723BFD81E603552000AC2F3 /* Question2ViewController.swift in Sources */,
 				1723BFDA1E6035F3000AC2F3 /* Question3ViewController.swift in Sources */,
