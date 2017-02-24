@@ -28,10 +28,10 @@ class Question3ViewController: UIViewController {
     @IBAction func confirm(){
         if textField.text ==  "小数"{
             label.text = "正解です"
-            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(Question3ViewController.confirm), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
         }else{
             label.text = "不正解です"
-            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(Question3ViewController.confirm), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
         }
         
         

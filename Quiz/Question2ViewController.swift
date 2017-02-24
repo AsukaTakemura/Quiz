@@ -27,10 +27,10 @@ class Question2ViewController: UIViewController {
     @IBAction func confirm(){
         if textField.text ==  "整数"{
             label.text = "正解です"
-            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Question2ViewController.confirm), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
         }else{
             label.text = "不正解です"
-            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Question2ViewController.confirm), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(SegueViewController.viewDidLoad), userInfo: nil, repeats: false)
         }
         
         
